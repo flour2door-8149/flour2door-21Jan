@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/Flour2door/app/delivery/layout.jsx"],"sourcesContent":["import { SignedIn, SignedOut, SignIn } from \"@clerk/nextjs\"\r\n\r\nexport const metadata = {\r\n    title: \"Flour2Door - Delivery Dashboard\",\r\n    description: \"Manage your deliveries\",\r\n}\r\n\r\nexport default function DeliveryLayout({ children }) {\r\n    return (\r\n        <>\r\n            <SignedIn>\r\n                {children}\r\n            </SignedIn>\r\n            <SignedOut>\r\n                <div className=\"min-h-screen flex items-center justify-center\">\r\n                    <SignIn fallbackRedirectUrl=\"/delivery\" routing=\"hash\" />\r\n                </div>\r\n            </SignedOut>\r\n        </>\r\n    )\r\n}"],"names":[],"mappings":";;;;;;;AAAA;AAAA;;;AAEO,MAAM,WAAW;IACpB,OAAO;IACP,aAAa;AACjB;AAEe,SAAS,eAAe,EAAE,QAAQ,EAAE;IAC/C,qBACI;;0BACI,8OAAC,qLAAQ;0BACJ;;;;;;0BAEL,8OAAC,sLAAS;0BACN,cAAA,8OAAC;oBAAI,WAAU;8BACX,cAAA,8OAAC,gMAAM;wBAAC,qBAAoB;wBAAY,SAAQ;;;;;;;;;;;;;;;;;;AAKpE","debugId":null}}]
+}
